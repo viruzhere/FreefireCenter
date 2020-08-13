@@ -1,0 +1,243 @@
+
+html{
+	scroll-behavior: smooth;
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Baloo Thambi 2'
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+a:hover{
+	text-decoration: none;
+}
+.header{
+	width: 100%;
+	height: 100vh;
+	/* background: rgb(93,184,191);
+background: linear-gradient(300deg, rgba(93,184,191,1) 6%, rgba(102,195,122,1) 51%, rgba(176,195,102,1) 100%);*/
+background-repeat: no-repeat;
+background-size: cover;
+background-image: url(../img/vg.jpeg);
+position: relative;
+}
+.header:before
+{
+	content: "";
+	position: absolute;
+	top: 0%;
+	bottom: 0%;
+	left: 0%;
+	right:0%;
+	z-index: -1;
+	background-image: url(../img/vg.jpeg);
+/* background: rgb(93,184,191);
+background: linear-gradient(300deg, rgba(93,184,191,1) 6%, rgba(102,195,122,1) 51%, rgba(176,195,102,1) 100%);*/
+}
+.navbar:before{
+	content: "";
+	position: absolute;
+	top: 0%;
+	bottom: 0%;
+	left: 0%;
+	right:0%;
+	opacity: 0.2;
+	z-index: -1;
+	background-image: url(../img/vg.jpeg);
+/* background: rgb(93,184,191);
+background: linear-gradient(300deg, rgba(93,184,191,1) 6%, rgba(102,195,122,1) 51%, rgba(176,195,102,1) 100%);*/
+}
+
+.nav-item .nav-link{
+	
+	font-weight: bold;
+	color: white;
+	font-size: 17px;
+	padding: 3px 9px ;
+	border-radius: 3px;
+
+	text-transform: uppercase;
+	  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+ 
+  -webkit-transition-property: #0F2A4D;
+  transition-property: #0F2A4D;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.nav-link:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background:  #007acc;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.nav-link:hover, .nav-link:focus,  {
+  color: white;
+}
+.nav-link:hover:before, .nav-link:focus:before, .nav-link:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.nav-link.active1,.nav-link:hover{
+
+	background:#cacecc;
+	transition: .5s;
+	position: relative;
+	overflow: hidden;
+
+}
+.header-section{
+	width: 100%;
+	height: inherit;
+	color: #000;
+
+	text-align: center;
+	position: relative;
+
+}
+.center-div{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+}
+#url{
+	width: 50%;
+	position: relative;
+	left: 25%;
+	border-radius-right:12px;
+}
+#spa:before{
+	content: '';
+	animation: animate infinite 6s;
+	color: #1a75ff;
+	border-right: 2px #1a75ff;
+	animation: type 5s linear infinite;
+	white-space: nowrap;
+}
+
+@keyframes type{
+	0%{
+		content: 'DJ Alok';
+		width: 0;
+		
+	}
+	40%{
+		content: 'Diamonds';
+		width: 80%;
+	}
+	60%{
+		content: 'For Free';
+		width:120%;
+	}
+		
+
+
+}
+.s-btn{
+	
+	color: #fff;
+	text-decoration: none;
+	padding: 15px 30px;
+	border-radius: 6px;
+	display: inline-block;
+	 
+	transition: 0.7s;
+	position: relative;
+	border-left: 2px solid white ;
+	border-right: 2px solid white ;
+	
+	cursor: pointer;
+
+}
+
+.s-btn::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height:0%;
+	background: white;
+	z-index: -1;
+	transition: 0.7s;
+	color: #ff661a;
+}
+.s-btn:hover{
+	color: #fff;
+	background: #1a75ff;
+	box-shadow: 0 0 10px #1a75ff, 0 0 40px #1a75ff, 0 0 80px #1a75ff;
+	transition-delay: 0.1s; 
+}
+
+.single-fact{
+	text-align: center;
+	margin: 50px 0px;
+	border-right: 1px solid gray;
+}
+.fact-area{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+
+}
+.fact-box{
+box-shadow: 0px 20px 50px rgba(153,153,153,0.2);
+}
+/*----------------------iconn start-----*/
+.header-extradiv{
+	width: 100%;
+	height: auto;
+	
+	text-align: center;
+
+}
+.extradiv{
+	background: #fff;
+	border: medium none;
+	padding: 30px!important;
+	margin: 50px 10px 10px 50px ;
+	border-radius: 4px;
+	transition: 0.3s;
+	background-color: inherit;
+}
+.extradiv:hover{
+	box-shadow: 2px rgba(153,153,153,0.2);
+	border-radius: 2px;
+	transform: matrix3d( 1,0,0,0,
+      0,1,0,0,
+      0,0,1,0,
+      -25,-50,0,1.1);
+
+}
+
+/*-----------------icon end----------*/
