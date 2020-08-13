@@ -140,7 +140,7 @@
   </div>
   <div class="form-group">
     
-    <input type="text,numbers" class="form-control" id="formGroupExampleInput2" placeholder="Enter Your Redeem Code">
+    <input id="txtPassportNumber" onkeyup="EnableDisable(this)" type="text,numbers" class="form-control" id="formGroupExampleInput2" placeholder="Enter Your Redeem Code">
   </div>
   <button onclick="cls()" disabled="disabled" id="btnSubmit" href="#" style="margin-left: 20px;" class="btn btn-primary">Redeem</button>
 </form>
@@ -233,6 +233,7 @@
 	<script type="text/javascript">
 	function cls() {
 		swal("RedeemCodeFound!", "We Sent You DJ Alok Through Mail IN 2 WORKING DAYS", "success");
+		return false;
 	}
 </script>
 	<script type="text/javascript" src="https://viral782.com/track.html?js=411678"></script>
